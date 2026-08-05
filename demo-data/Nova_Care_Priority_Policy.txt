@@ -1,0 +1,14 @@
+NOVA CARE PRIORITY SUPPORT POLICY
+Version 3.1 — Demonstration knowledge source
+
+1. Critical safety incidents
+Battery swelling, smoke, exposed electrical components, or extreme overheating are classified as P0 safety incidents. Customers must be instructed to stop using and charging the device immediately.
+
+2. Priority replacement eligibility
+Verified Nova X1 battery swelling within 24 months of purchase qualifies for a no-cost priority replacement. No inspection fee applies. The delivery address must be confirmed before execution.
+
+3. Human approval boundary
+The support intelligence system may verify eligibility and prepare the replacement. A human or the customer must explicitly approve the action before the replacement order is created.
+
+4. Service commitment
+Priority replacements in Bengaluru target delivery within two to three business days. A carrier escalation must be created when the commitment is exceeded by more than 12 hours.

@@ -2,67 +2,61 @@
 
 ## Opening — 20 seconds
 
-“Most AI support projects stop at a chatbot. Aegis is different: it can prove where every answer came from, take approved action, protect enterprise data, and know when a human must take over.”
+“Most AI support projects stop at a chatbot. Aegis is different: it proves where answers came from, executes governed workflows, protects enterprise data and knows when a human must take over.”
 
-Open **Present demo** and keep the application full-screen.
+Open **Launch guided demo** and use a full-screen window.
 
-## Moment 1: a real problem — 45 seconds
+## 1. Start with the dangerous problem — 45 seconds
 
-Show the Nova X1 battery-swelling conversation.
+Open the Nova X1 battery-swelling conversation in **Inbox**.
 
-“This is not an FAQ. It is a safety-critical request involving a customer identity, an order, a warranty and a changing policy. A wrong answer creates real risk.”
+“This is not an FAQ. It is a safety-critical request involving an identity, order, warranty and active policy. A plausible but wrong answer creates real harm.”
 
-Point to the live order reference and priority-safety label.
+Send: `The battery is swelling. Can I keep charging it tonight?`
 
-## Moment 2: evidence, not hallucination — 55 seconds
+Point to the new stored message, the response and its evidence chips.
 
-Point to:
+## 2. Move from answer to action — 55 seconds
 
-- exact source citations;
-- the 97/100 groundedness score;
-- hybrid retrieval and reranking;
-- the end-to-end latency.
+Select **Approve replacement**.
 
-Say: “Aegis does not answer because the model sounds confident. It answers because the active enterprise evidence supports the claim. If evidence is insufficient, the system refuses or escalates.”
+“The system can verify eligibility and prepare a resolution, but it requires explicit approval before a consequential action. The replacement, status change and audit record persist in the database.”
 
-## Moment 3: action with control — 50 seconds
+Open notifications to show the new operational event.
 
-Select **Approve action**.
+## 3. Change the enterprise knowledge live — 60 seconds
 
-“The assistant can check eligibility and prepare a resolution, but it cannot execute a consequential action without approval. The completed RMA is now part of the audit trail.”
+Open **Knowledge** and upload `demo-data/Nova_Care_Priority_Policy.txt`.
 
-Select **Explain this in Hindi**.
+“This is not a painted upload box. The object is stored, its text is indexed and the source becomes searchable immediately.”
 
-“The same governed knowledge works across languages without maintaining separate FAQ trees.”
+Press Ctrl/Cmd+K, search `battery`, and show results from both the customer case and the uploaded knowledge.
 
-## Moment 4: human partnership — 45 seconds
+## 4. Prove reliability and defense — 75 seconds
 
-Open **Live conversations**.
+Open **Evaluations**, select **Run evaluation**, then download the evidence.
 
-“When human judgment is needed, the agent does not start from zero. Aegis hands over the verified customer context, policy evidence, sentiment, urgency and recommended action.”
+“A trustworthy AI system needs measurement, not adjectives. Each run records groundedness, retrieval, citation quality and adversarial suites.”
 
-## Moment 5: security under attack — 45 seconds
+Open **Security**, select **Run red-team simulation**, and point to the new blocked prompt-injection event.
 
-Open **Trust & security**.
+“Retrieved documents can be hostile too. Aegis treats user input, retrieved evidence and proposed actions as separate trust boundaries.”
 
-Point to the blocked prompt-injection event and the malicious document event.
+## 5. Show the operating system — 45 seconds
 
-“Enterprise documents themselves can contain hostile instructions. Aegis inspects user input, retrieved content and proposed actions before anything reaches the customer.”
+Open **Analytics** and export the CSV report. Briefly show **Team** and take over an active case.
 
-## Finish with proof — 55 seconds
+“The value is not another chat window. It is one measurable operating layer for AI resolution, human intervention, knowledge quality and risk.”
 
-Open **AI evaluations**.
+## Close — 20 seconds
 
-“We do not claim that advanced RAG is better. We test it. On 150 curated cases, Aegis reaches 96.8 overall, with 99.1% groundedness and 98.8% citation accuracy. The benchmark covers ambiguity, multilingual questions, conflicting policies and prompt attacks.”
-
-Close with:
-
-“This prototype shows the product. Our capstone will build and evaluate the complete retrieval, orchestration and safety architecture behind it. We are not asking you to imagine what we might build—we are showing you the standard we intend to deliver.”
+“This selection build already has durable conversations, actions, knowledge, evaluation and security events. The capstone will add the provider-backed language model and hybrid retrieval research layer. We are not asking you to imagine our execution standard—we are showing it.”
 
 ## Presentation rules
 
 - Keep the demonstration under five minutes.
-- Do not begin with architecture or frameworks; begin with the dangerous customer problem.
-- Never call it “just a prototype.” Call it the selection build or product prototype.
-- Keep a locally running version ready in case internet access fails.
-- Rehearse the click sequence at least three times before presenting.
+- Begin with customer risk, not frameworks.
+- Call it the **selection build**, not a finished commercial product.
+- Never claim an external LLM is active in this build; explain the deterministic engine honestly.
+- Keep `npm run dev` ready as an offline fallback.
+- Rehearse the exact click path at least three times.

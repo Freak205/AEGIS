@@ -1,21 +1,25 @@
 # Aegis — Enterprise Support Intelligence
 
-Aegis is a high-fidelity capstone prototype for evidence-grounded, action-capable customer support. It demonstrates how an enterprise AI system can retrieve trusted knowledge, explain its evidence, apply safety controls, complete approved support workflows, and hand difficult cases to a human agent.
+Aegis is an operational capstone selection build for evidence-grounded customer support. It combines a premium agent workspace with persistent conversations, governed actions, knowledge ingestion, evaluation, security testing, analytics and human handoff.
 
-## What the prototype demonstrates
+## What works now
 
-- A premium command center with operational and customer-experience metrics
-- Evidence-grounded customer conversation with page-level citations
-- Order, warranty and safety-policy reasoning
-- Human confirmation before consequential actions
-- Priority replacement workflow with a generated RMA
-- Multilingual response demonstration
-- Human-agent inbox and AI-generated handoff brief
-- Uploadable knowledge source with visible indexing state
-- Quantitative advanced-RAG versus basic-RAG benchmark
-- Prompt-injection detection, PII protection and action authorization
+- Persistent customer conversations and evidence-aware replies
+- Global search across conversations and knowledge
+- Replacement approval, escalation, takeover, activation retry, carrier escalation and closure
+- Immutable support-action records and operator notifications
+- TXT, Markdown, JSON and CSV ingestion with full text extraction
+- PDF and DOCX object upload with indexed metadata
+- Validated URL knowledge connectors
+- Knowledge-source deletion and R2 object cleanup
+- Evaluation runs with stored scores and downloadable JSON evidence
+- Prompt-injection simulations with stored security events
+- Analytics and CSV export
+- Browser voice input where Web Speech Recognition is available
 - Guided five-step presentation mode
-- Responsive layouts for projector, laptop, tablet and phone screens
+- Private authenticated deployment with D1 database and R2 object storage
+
+The included response engine is deterministic and policy-grounded so the demo works reliably without an external model credential. A provider-backed LLM and embeddings pipeline is the next capstone integration, not a capability being falsely claimed in this selection build.
 
 ## Run locally
 
@@ -28,36 +32,35 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Production validation
+## Verify production readiness
 
 ```powershell
-npm run build
+npm test
+npm run lint
 ```
 
-## Recommended demo path
+The test command creates the production worker and verifies the storage, schema, API-action and UI contracts.
 
-1. Open **Command center** and select **Launch guided demo**.
-2. Explain the critical Nova X1 battery issue.
-3. Point to the evidence citations, confidence score and reasoning trace.
-4. Select **Approve action** to create replacement `RMA-2084`.
-5. Ask **Explain this in Hindi** to demonstrate multilingual support.
-6. Open **Live conversations** to show the human handoff brief.
-7. Open **Knowledge base** and upload a sample PDF to show indexing.
-8. Open **Trust & security** to demonstrate prompt-injection defense.
-9. Finish in **AI evaluations** with the measured comparison against basic RAG.
+## Recommended live demo
 
-## Product architecture
+1. Open **Overview** and select **Launch guided demo**.
+2. Enter **Inbox**, open the Nova X1 safety case and send a new question.
+3. Point out the grounded response and its source citations.
+4. Approve the replacement; show that the conversation, audit entry and notification update.
+5. Open **Knowledge**, upload `demo-data/Nova_Care_Priority_Policy.txt`, then search for “battery”.
+6. Run a fresh suite in **Evaluations** and download its evidence.
+7. Run the red-team simulation in **Security** and show the persisted blocked event.
+8. Finish with **Analytics** and export the operational report.
 
-This overnight selection build is a polished, interactive product prototype. The full capstone architecture is designed around:
+## Runtime architecture
 
-- Next.js/TypeScript customer, agent and admin experiences
-- FastAPI application and action-service layer
-- LangGraph orchestration for predictable, inspectable workflows
-- Hybrid dense and keyword retrieval with reranking
-- PostgreSQL plus pgvector or Qdrant for production data
-- Llama-family model support through a provider-neutral adapter
-- OCR and structured ingestion for PDF, DOCX, CSV and web content
-- Offline and online evaluation for correctness, groundedness and retrieval quality
-- Role-based authorization, tenant isolation, PII filtering and audit trails
+- Next.js-compatible React/TypeScript interface built with Vinext
+- Cloudflare Worker server runtime
+- Cloudflare D1 durable relational data
+- Cloudflare R2 durable source-object storage
+- Prepared, parameterized SQL and indexed operational tables
+- Private ChatGPT Sites authentication with per-user audit identity
+- SSRF-aware URL validation, file-size limits and prompt-injection controls
+- Drizzle schema and versioned SQL migrations
 
-See [DEMO_SCRIPT.md](./DEMO_SCRIPT.md) for the exact five-minute presentation.
+See [DEMO_SCRIPT.md](./DEMO_SCRIPT.md) for the five-minute selection presentation.
