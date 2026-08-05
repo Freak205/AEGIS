@@ -2,6 +2,8 @@
 
 Aegis is an operational capstone selection build for evidence-grounded customer support. It combines a premium agent workspace with governed actions, knowledge ingestion, evaluation, security testing, analytics and human handoff.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FFreak205%2FAEGIS)
+
 ## What works
 
 - Persistent conversations and evidence-aware replies
